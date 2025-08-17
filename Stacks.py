@@ -20,9 +20,9 @@ if stk: #if empty
     print(True)
 
 stk.pop()
-stk.pop()
+# stk.pop()
 #stk.pop() # error for empty stack
-
+print(stk)
 #Queue - FIFO
 
 from collections import deque
