@@ -14,7 +14,6 @@ def BinarySearch(arr):
         else:
             L = mid + 1
 
-
     return L
 
 
