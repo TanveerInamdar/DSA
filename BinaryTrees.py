@@ -22,7 +22,6 @@ B.left = D
 B.right = E
 C.left = F
 
-print(A)
 
 def pre_order(node):
     if not node:
@@ -31,7 +30,7 @@ def pre_order(node):
     pre_order(node.left)
     pre_order(node.right)
 
-pre_order(A)
+# pre_order(A)
 
 def in_order(node):
     if not node:
@@ -41,6 +40,12 @@ def in_order(node):
     print(node)
     in_order(node.right)
 
-in_order(A)
+#in_order(A)
 
+def post_order(node):
+    if not node:
+        return
 
+    post_order(node.left)
+    post_order(node.right)
+    print(node)
