@@ -46,6 +46,9 @@ def post_order(node):
     if not node:
         return
 
+
     post_order(node.left)
     post_order(node.right)
     print(node)
+
+
