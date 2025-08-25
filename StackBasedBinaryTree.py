@@ -39,6 +39,11 @@ def level_order(node):
     q.append(node)
 
     while q:
-    node = q.popleft()
+        node = q.popleft()
     
+        print(node)
+        if node.left: q.append(node.left)
+        if node.right: q.append(node.right)
+
+# print(level_order(A))
 
