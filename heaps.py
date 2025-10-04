@@ -66,3 +66,9 @@ largest = - heapq.heappop(B)
 #print(largest)
 heapq.heappush(B, -7) #inserts 7 not -7
 
+
+C = [-5,4,2,1,7,0,3]
+heap = []
+for c in C:
+    heapq.heappush(heap, c)
+    print(heap)
