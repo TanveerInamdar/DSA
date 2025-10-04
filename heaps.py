@@ -72,3 +72,16 @@ heap = []
 for c in C:
     heapq.heappush(heap, c)
     print(heap)
+
+
+D = [5,4,3,5,3,2,3,5,3,4,5]
+
+from collections import Counter
+
+counter = Counter(D)
+print(counter)
+
+heap2 = []
+for k, v in counter.items():
+    heapq.heappush(heap2, (v, k))
+print(heap2)
