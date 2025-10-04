@@ -43,4 +43,16 @@ def heapsort(arr):
 
 #Max heap
 
+B = [-4,3,1,0,2,5,10,8,12,9]
+n = len(B)
+
+for i in range(n):
+    B[i] = -B[i]
+heapq.heapify(B)
+# for i in range(n):
+#     B[i] = -1 * (B[i])
+
+print(B)
+
+heapq.heappush(B, -7) #inserts 7 not -7
 
