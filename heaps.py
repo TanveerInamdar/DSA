@@ -41,6 +41,14 @@ def heapsort(arr):
 
 #print(heapsort([1,3,5,7,9,2,4,6,8,0]))
 
+#heappushpop
+x = heapq.heappushpop(A, 99)  #popped 0 and pushed 99
+print(x)
+print(A)
+
+
+
+
 #Max heap
 
 B = [-4,3,1,0,2,5,10,8,12,9]
@@ -54,5 +62,7 @@ heapq.heapify(B)
 
 print(B)
 
+largest = - heapq.heappop(B)
+#print(largest)
 heapq.heappush(B, -7) #inserts 7 not -7
 
